@@ -1,0 +1,3 @@
+﻿  ValidPerfectSquare.cpp
+C:\Users\becau\source\repos\ValidPerfectSquare\ValidPerfectSquare\ValidPerfectSquare.cpp(40,19): warning C4307: '*': signed integral constant overflow
+  ValidPerfectSquare.vcxproj -> C:\Users\becau\source\repos\ValidPerfectSquare\Debug\ValidPerfectSquare.exe
