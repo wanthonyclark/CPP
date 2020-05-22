@@ -43,7 +43,7 @@ string removeKdigits(string num, int k)
 	int count = 1;
 	bool allRemoved = false;
 	char numOne = num[0];
-	char numTwo;
+	char numTwo = num[1];
 	string newNum;
 	
 	/*for (int count = 0; count < num.length || !allRemoved; count++)
@@ -56,30 +56,30 @@ string removeKdigits(string num, int k)
 
 	do
 	{
-		if ((count == k) && (k == 1))
+		if ((k == 1))
 			return (newNum = num[1]);
 		else if (count == k)
 			return newNum;
 		else
 		{
 			numTwo = num[count];
-			if (numTwo == numOne)
-			{
-				numOne = numTwo;
+			if (numTwo == numOne)			{
+				
 				for (int index = 0; index < num.length; index++)
 				{
 					num[index] = num[index + 1];
-					numsRemoved++
+					numsRemoved++;
 				}
 			}
 			else if (numTwo > numOne)
 			{
 				numsRemoved++;
+				num[count] = num[count + 1];
 			}
 		}
 			
 		
-	} while (!allRemoved)
+	} while (numsRemoved < k);
 
 
 
